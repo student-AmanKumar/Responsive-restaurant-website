@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Responsive Restaurant Website</title>
     <link rel="stylesheet" href="style.css">
-    <!-- add icons -->
+    <!-- font awesome link-->
      <script src="https://kit.fontawesome.com/bfc6a1edf2.js" crossorigin="anonymous"></script>
+      <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <!-- main -->
@@ -16,26 +19,45 @@
             <!-- nvabar -->
              <nav>
                 <ul>
-                    <li><a href="#about" class="logo" id="logo">Tas<span>te</span></a></li>
+                    <li><a href="#about" class="logo" id="logo"><i class="fa-solid fa-cart-arrow-down" style="color:#ff7800;margin-right: 12px;"></i>Tas<span>te</span></a></li>
                     
-                    <!-- <li><i class="fa-solid fa-cart-arrow-down"></i></li> -->
                   <a href="#main"> <li>Home</li></a> 
                   <a href="#menu"> <li>Menu</li></a> 
-
                   <a href="#about"> <li>About</li></a> 
-
-
                   <a href="#review"> <li>Review</li></a> 
-                                    <a href="#contact"> <li>Contact</li></a> 
+                 <a href="#footer"> <li>Contact</li></a> 
 
                
 
-                 
-                    <li><a href="#" class="btn1" id="con" style="background: rgb(52, 52, 236); color:white; font-weight:normal;">Login</a></li>
-                        <li><a href="#" class="btn1" id="con" style="background: rgb(3, 155, 3); color:white ; font-weight:normal;">Signup</a></li>
+  <!-- user,serch icons -->
+        <i class="fas fa-user" id="user-btn"></i>
+         <i class="fas fa-search" id="search-btn"></i>
 
-                </ul>
+
+<!-- search form -->
+<form action="" class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+</form>
+
+
+ </ul>
+  
+
+<!-- login form -->
+<form class="login-form">
+    <h3>login now</h3>
+
+    <input type="email" placeholder="your email" class="box">
+    <input type="password" placeholder="your password" class="box">
+
+    <p>forget your password <a href="#">click here</a></p>
+    <p>don't have an account <a href="#">create now</a></p>
+
+    <input type="submit" value="login now" class="btn">
+</form>
              </nav>
+
+  
              <!-- main-content -->
               <div class="main-content">
                 <!-- main-tex -->
@@ -154,7 +176,7 @@
                     <p>Fluffy deep-fried bhature served with spicy and flavorful chickpea curry, garnished with onions and pickles — a classic North Indian delicacy.</p>
 
                 </div>
-<img src="/imgs/chhole-bhature.png" alt="chhole bhature">
+                <img src="/imgs/chhole-bhature.png" alt="chhole bhature">
             </div> 
                <div class="menu-item">
                 <div>
@@ -173,7 +195,7 @@
                     <p>Golden, crispy fritters made from sliced potatoes dipped in spiced gram flour batter and deep-fried, served hot with chutney.</p>
 
                 </div>
-<img src="/imgs/pakore.png" alt="pakore">
+                <img src="/imgs/pakore.png" alt="pakore">
             </div> 
                <div class="menu-item">
                 <div>
@@ -182,7 +204,7 @@
                      <p>Crispy hollow puris filled with spicy and tangy flavored water, mashed potatoes, chickpeas, and chutneys — a popular Indian street food snack.</p>
 
                 </div>
-<img src="/imgs/golgappe.png" alt="golgappe">
+                 <img src="/imgs/golgappe.png" alt="golgappe">
             </div> 
                <div class="menu-item">
                 <div>
@@ -191,7 +213,7 @@
                     <p>Soft, deep-fried milk solids dumplings soaked in rose-flavored sugar syrup, served warm and melt-in-the-mouth.</p>
 
                 </div>
-<img src="/imgs/gulab-jamun.png" alt="gulab jamun">
+                   <img src="/imgs/gulab-jamun.png" alt="gulab jamun">
             </div> 
                <div class="menu-item">
                 <div>
@@ -200,7 +222,7 @@
                      <p>Crispy, deep-fried spirals made from fermented batter, soaked in saffron-infused sugar syrup, served hot and sweet.</p>
 
                 </div>
-<img src="/imgs/jalebi.png" alt="jalebi">
+               <img src="/imgs/jalebi.png" alt="jalebi">
             </div> 
               <div class="menu-item">
                 <div>
@@ -228,7 +250,7 @@
                     <span>₹70</span>
                     <p>Traditional Indian sweet made with flour, ghee, and sugar, often flavored with cardamom and garnished with nuts.</p>
                 </div>
-<img src="/imgs/laddoo.png" alt="Laddoo">
+               <img src="/imgs/laddoo.png" alt="Laddoo">
             </div> 
           
              
@@ -343,14 +365,11 @@
 
 </div>
 
+</div>
+</div>
 
-
-
-      </div>
-      </div>
-
-      <!-- about section -->
-       <section class="about-section" id="about">
+    <!-- about section -->
+    <section class="about-section" id="about">
 
 <div class="about-container">
 
@@ -516,48 +535,27 @@ Beautiful restaurant and the food tasted authentic. Highly recommended!
 
 </section>
 
-<!-- contact section -->
- <section class="contact-section" id="contact">
-
-<h2 class="section-title">Contact <span>Us</span></h2>
-
-<div class="contact-container">
-
-<!-- contact card -->
-
-<div class="contact-card">
-<i class="fa-solid fa-phone"></i>
-<h3>Phone</h3>
-<p>+91 1234567890</p>
-</div>
-
-<div class="contact-card">
-<i class="fa-solid fa-envelope"></i>
-<h3>Email</h3>
-<p>abc@restaurant.com</p>
-</div>
-
-<div class="contact-card">
-<i class="fa-solid fa-location-dot"></i>
-<h3>Location</h3>
-<p>abc</p>
-</div>
-
-</div>
-
-</section>
 <!-- footer section -->
+
  <footer class="footer">
 
 <div class="footer-container">
 
 <!-- logo -->
 
-<div class="footer-box">
-<h2 class="footer-logo">Tas<span>te</span></h2>
+<div class="footer-box" id="footer">
+<h2 class="footer-logo"> <i class="fa-solid fa-cart-arrow-down" style="color:#ff7800 ;margin-right: 10px;"></i>Tas<span>te</span></h2>
 <p>
-    This web is made for practice purpose only.
+Hello my name is Aman Kumar. I made this website for practice purpose only, I hope you all enjoy this project.
 </p>
+<div class="social-icons">
+
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-youtube"></i>
+
+</div>
 <!-- footer offer -->
  <div class="footer-offer">
 <p>Get 20% off on your first order</p>
@@ -568,39 +566,33 @@ Beautiful restaurant and the food tasted authentic. Highly recommended!
 <!-- links -->
 
 <div class="footer-box">
-<h3>Quick <span>Links</span></h3>
+<h2>Quick <span>Links</span></h2>
 
-<a href="#main">Home</a>
-<a href="#menu">Menu</a>
-<a href="#about">About</a>
-<a href="#booking">Reservation</a>
-<a href="#contact">Contact</a>
+<a href="#main"><i class="fas fa-arrow-right" style="color:#ff7800" id="links"></i>Home</a>
+<a href="#menu"><i class="fas fa-arrow-right" style="color:#ff7800" id="links"></i> Menu</a>
+<a href="#about"> <i class="fas fa-arrow-right" style="color:#ff7800" id="links"></i>About</a>
+<a href="#booking"> <i class="fas fa-arrow-right" style="color:#ff7800" id="links"></i>Reservation</a>
 
 </div>
+<!-- Contact  -->
 
-<!-- social -->
+ <div class="footer-box">
+<h2>Contact <span>Info</span></h2>
 
-<div class="footer-box">
-<h3>Follow <span>Us</span></h3>
-
-<div class="social-icons">
-
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-youtube"></i>
+<a href="#menu"><i class="fa-solid fa-phone" style="color:#ff7800" id="phone"></i> +91  7247835971</a>
+<a href="#about"> <i class="fa-solid fa-envelope" style="color:#ff7800" id="phone"></i> yadavaman@gmail.com</a>
+<a href="#booking"> <i class="fa-solid fa-location-dot" style="color:#ff7800" id="phone"></i>Aligarh, India</a>
 
 </div>
 
 
-</div> 
 <div class="payment-section">
-    <h3>We <span>Accept</span></h3>
+    <h2>We <span>Accept</span></h2>
 
     <div class="payment-icons">
         <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-icon.png" alt="PhonePe">
         <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-pay-icon.png" alt="Google Pay">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/051/336/404/small_2x/paytm-transparent-icon-free-png.png" alt="Paytm">
+        <img src="/imgs/Paytm.png" alt="Paytm" >
     </div>
 </div>
 
@@ -617,13 +609,14 @@ Beautiful restaurant and the food tasted authentic. Highly recommended!
 <script>
 document.querySelector(".reservation-form").addEventListener("submit", function(e){
 
-e.preventDefault(); // page reload rokne ke liye
+e.preventDefault(); 
 
 alert("✅ Your table has been reserved successfully! Thank you for booking with us..");
 
-this.reset(); // form clear ho jayega
+this.reset(); 
 
 });
 </script>
+<script src="script.js"></script>
 </body>
 </html>
