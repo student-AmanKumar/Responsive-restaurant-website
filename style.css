@@ -15,12 +15,10 @@ body{
     background:white;
      margin: 0;
     padding: 0;
-    touch-action: pan-y; 
+  
 
 }
-html{
-      touch-action: manipulation;
-}
+
 #main{
     width: 100%;
     min-height: 100vh;
@@ -1176,7 +1174,7 @@ padding:0;
         display:grid;
 grid-template-columns:repeat(2,1fr);
 
-        padding-left: 3rem;
+        padding-left: 4rem;
       
 
     }
@@ -1390,7 +1388,7 @@ margin-left: 3.6rem;
 
 /* about */
  .about-section{
-        margin-left: 8.2rem;
+        margin-left: 8.6rem;
       }
 
 .about-text h2{
@@ -1409,7 +1407,7 @@ margin-left: 3.6rem;
       
 .reservation-section{
     width: 700px;
-    margin-left: 2.3rem;
+    margin-left: 3rem;
 
 }
 .reservation-section h2{
